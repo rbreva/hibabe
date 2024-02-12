@@ -1,0 +1,76 @@
+footer {
+  width: 100%;
+
+  .redes_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
+
+    .img_red {
+      width: 3rem;
+    }
+  }
+
+  .secciones {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+
+    .seccion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h3 {
+        font-size: 1.6rem;
+        padding: 10px 0px;
+        text-transform: uppercase;
+        font-weight: normal;
+      }
+
+      li {
+        padding: 5px 0px;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+      }
+
+      .tarjetas {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem 0;
+
+        .img_tarjeta {
+          width: 5rem;
+        }
+      }
+
+      .logo {
+        width: 100%;
+        margin-bottom: 2rem;
+
+        .img_logo {
+          width: 10rem;
+        }
+      }
+    }
+  }
+
+  .mark {
+    width: 100%;
+    background-color: $black;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .a_mark {
+      color: $white;
+      font-size: 1rem;
+    }
+  }
+}

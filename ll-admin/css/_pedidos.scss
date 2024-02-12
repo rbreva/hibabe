@@ -1,0 +1,179 @@
+.pedidos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .pedido {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid $light_grey;
+    align-items: center;
+
+    .pedido_num {
+      width: 5%;
+      text-align: center;
+      border-right: 1px solid $light_grey;
+      padding: 0.5rem;
+    }
+
+    .pedido_codigo {
+      width: 12%;
+      text-align: center;
+      border-right: 1px solid $light_grey;
+      padding: 0.5rem;
+    }
+
+    .pedido_total {
+      width: 8%;
+      text-align: center;
+      border-right: 1px solid $light_grey;
+      padding: 0.5rem;
+    }
+
+    .pedido_email {
+      width: 25%;
+      border-right: 1px solid $light_grey;
+      padding: 0.5rem;
+    }
+
+    .pedido_fecha {
+      width: 10%;
+      text-align: center;
+      border-right: 1px solid $light_grey;
+      padding: 0.5rem;
+    }
+    
+    .pedido_cliente {
+      width: 20%;
+      text-align: center;
+      border-right: 1px solid $light_grey;
+      padding: 0.5rem;
+    }
+
+    .pedido_tipo {
+      width: 10%;
+      text-align: center;
+      border-right: 1px solid $light_grey;
+      padding: 0.5rem;
+    }
+
+    .pedido_estado {
+      width: 15%;
+      text-align: center;
+      border-right: 1px solid $light_grey;
+      padding: 0.5rem;
+    }
+
+    .pedido_acciones {
+      width: 15%;
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      .accbtn {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        font-size: 1.2rem;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        color: $white;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      .pedgreen {
+        background-color: $green_ll;
+      }
+
+      .pedred {
+        background-color: $red_ll;
+      }
+    }
+  }
+
+  .top {
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.pedido {
+  .titulo_pedido {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: $lighter_grey;
+
+    .pedido_num {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .pedido_estado {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .btn_descarga_pdf {
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      font-size: 1.2rem;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+      color: $white;
+      background-color: $green_ll;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .pedido_sel {
+    width: 100%;
+
+    .datos {
+      display: flex;
+      margin: 1rem;
+      border: 1px solid $light_grey;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      gap: 2rem;
+
+      .nombre {
+        font-weight: bold;
+      }
+
+      .linea {
+        .form_datos {
+          display: flex;
+          gap: 2rem;
+          flex-direction: column;
+
+          .form_datos_btn {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            border: none;
+            font-size: 1.2rem;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+            color: $white;
+            background-color: $blue_ll;
+
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+}

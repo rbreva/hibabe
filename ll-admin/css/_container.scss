@@ -1,0 +1,259 @@
+.container {
+  width: 100%;
+
+  .titulo_h1 {
+    font-size: 1.4rem;
+    background-color: $dark_grey;
+    color: $white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+  }
+
+  .wrap {
+    margin: 5rem 1rem 3rem 1rem;
+    border: 1px solid $light_grey;
+    border-radius: 0.5rem;
+
+    .barra_titulo {
+      background-color: $lighter_grey;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .titulo_h2 {
+        font-size: 1.4rem;
+      }
+
+      .nuevo_btn {
+        background-color: $green_ll;
+        color: $white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          background-color: $light_grey;
+          color: $dark_grey;
+        }
+      }
+
+      .botones_prod {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .form_search {
+          display: flex;
+
+          .form_search_input {
+            padding: 5px;
+          }
+
+          .form_search_btn {
+            font-size: 1.2rem;
+            color: $white;
+            padding: 8px;
+            background: $icon_gray;
+            border: none;
+            border-radius: 0px 5px 5px 0px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .titulo_form {
+      padding: 1rem;
+      font-weight: bold;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+
+      .item_name {
+        font-weight: bold;
+        width: 30%;
+
+        @media screen and (min-width: 768px) {
+          width: 15%;
+        }
+      }
+
+      .item_data {
+        width: 100%;
+      }
+
+      input,
+      select {
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+          width: 50%;
+        }
+      }
+
+      input[type="checkbox"] {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+
+    .imagen_logo {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+
+      img {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+
+    .botonera {
+      background-color: $lighter_grey;
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      .btn_a {
+        background-color: $green_ll;
+        color: $white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.5s ease-in-out;
+        border: none;
+
+        &:hover {
+          background-color: $light_grey;
+          color: $dark_grey;
+        }
+      }
+
+      .acc_btn {
+        background-color: $red_ll;
+        color: $white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          background-color: $light_grey;
+          color: $dark_grey;
+        }
+      }
+    }
+
+    .cuadro {
+      padding: 1rem;
+
+      .subtitulo_prod {
+        background-color: $lighter_grey;
+        padding: 0.8rem 2rem;
+        font-size: 1.4rem;
+        margin: 0.8rem 0;
+      }
+    }
+
+    .vacio {
+      display: flex;
+      padding: 10rem;
+      gap: 1rem;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      .vacio_h2 {
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+
+      .vacio_p {
+        font-size: 1.2rem;
+        font-style: italic;
+        color: $red_ll;
+      }
+
+      .vacio_btn {
+        background-color: $dark_grey;
+        color: $white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 2rem;
+          height: 2rem;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.con_open {
+  width: calc(100% - 2.4rem);
+  transition: all 0.5s ease-in-out;
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% - 24rem);
+  }
+}
+
+.con_close {
+  width: calc(100% - 2.4rem);
+  transition: all 0.5s ease-in-out;
+}
+
+.alert {
+  color: $red_ll;
+  font-size: 1.2rem;
+}
+
+.retorno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .retorno_msj {
+    font-size: 1.4rem;
+    padding: 4rem;
+  }
+
+  .retorno_a {
+    text-decoration: none;
+    font-weight: bold;
+    background: $green_ll;
+    color: $white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 1rem;
+    border: none;
+
+    &:hover {
+      color: $dark_grey;
+      background: $light_grey;
+    }
+  }
+}

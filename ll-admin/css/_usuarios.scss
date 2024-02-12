@@ -1,0 +1,136 @@
+.lista {
+  display: flex;
+  font-size: 1rem;
+
+  .user {
+    width: 10%;
+  }
+
+  .nombre {
+    width: 15%;
+  }
+
+  .apellido {
+    width: 15%;
+  }
+
+  .email {
+    width: 15%;
+  }
+
+  .cargo {
+    width: 10%;
+  }
+
+  .nivel {
+    width: 10%;
+  }
+
+  .opciones {
+    width: 25%;
+
+    .opciones_a {
+      background-color: $green_ll;
+      color: $white;
+      padding: 0.4rem 1rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        background-color: $light_grey;
+        color: $dark_grey;
+      }
+    }
+
+    .red_alert {
+      background-color: $red_ll;
+    }
+  }
+
+  .orden {
+    border-bottom: 1px solid $light_grey;
+    padding: 0.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+.cabecera {
+  font-weight: bold;
+}
+
+.del_conf {
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  .del_msj {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .del_btn {
+    background-color: $red_ll;
+    color: $white;
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background-color: $light_grey;
+      color: $dark_grey;
+    }
+  }
+  
+  .retorno_btn {
+    background-color: $green_ll;
+    color: $white;
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    border: none;
+
+    &:hover {
+      background-color: $light_grey;
+      color: $dark_grey;
+    }
+  }
+
+  .del_reg {
+    background-color: $green_ll;
+    color: $white;
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background-color: $light_grey;
+      color: $dark_grey;
+    }
+  }
+
+  .linea {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+}

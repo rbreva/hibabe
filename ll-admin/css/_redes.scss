@@ -1,0 +1,53 @@
+.red {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid $light_grey;
+
+  .red_icon {
+    padding: 0.5rem;
+    width: 4rem;
+  }
+
+  .red_name {
+    font-weight: bold;
+  }
+
+  .red_link {
+    color: $middle_grey;
+  }
+
+  .red_options {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .suspender {
+      background-color: $red_ll;
+    }
+
+    .activar {
+      background-color: $green_ll;
+    }
+
+    .editar {
+      background-color: $blue_ll;
+    }
+
+    .red_btn {
+      color: $white;
+      padding: 0.4rem 1rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        background-color: $light_grey;
+        color: $dark_grey;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.suscripcion_form {
+  padding: 1rem;
+
+  .bloque_sus {
+    border: 1px solid $light_grey;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    .subtitulo_h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .input_file {
+      padding: 1rem;
+    }
+
+    .img_form_susc {
+      width: 60rem;
+      height: auto;
+    }
+
+    .img_form_susc_modal {
+      width: 30rem;
+      height: auto;
+    }
+  }
+
+  .linea_form {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+}

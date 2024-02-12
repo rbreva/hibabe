@@ -1,0 +1,59 @@
+.proceso_sku {
+  display: flex;
+  padding: 2rem;
+  border: 1px solid $light_grey;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  flex-direction: column;
+
+  .sku {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    color: $dark_grey;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .existe {
+    border: 1px solid $light_grey;
+    background-color: $light_grey;
+  }
+
+  .nuevo {
+    border: 1px solid $green_ll;
+    background-color: $green_ll;
+  }
+
+  .error {
+    border: 1px solid $red_ll;
+    background-color: $red_ll;
+  }
+  
+  .alerta {
+    border: 1px solid $yellow_ll;
+    background-color: $yellow_ll;
+  }
+  
+  .falta {
+    border: 1px solid $blue_ll;
+    background-color: $blue_ll;
+  }
+
+  .msj_sku {
+    background-color: $red_ll;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 1rem;
+    text-transform: uppercase;
+  }
+}
+
+.upload {
+  padding: 2rem;
+}

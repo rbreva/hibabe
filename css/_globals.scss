@@ -1,0 +1,60 @@
+/* -------Globals---------- */
+
+$white: #ffffff;
+$black: #2c2c2c;
+$middle_grey: #c1c1c1;
+$light_grey: #efefef;
+$red: #b01116;
+$gray_tr: #ffffffc9;
+$principalFont: "Lato", sans-serif;
+
+
+*,
+*::before,
+*::after,
+a:focus {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body{
+	width: 100%;
+    background: $white;
+    font-family: $principalFont;
+    font-size: 1.4rem;
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+}

@@ -1,0 +1,202 @@
+.nav_bar {
+  width: 100%;
+  background-color: $white;
+  height: 100%;
+  z-index: 10;
+
+  @media screen and (min-width: 768px) {
+    background-color: initial;
+    width: 80%;
+  }
+
+  .nav_bar_ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem;
+
+    @media screen and (min-width: 768px) {
+      flex-wrap: nowrap;
+      gap: 1rem;
+    }
+
+    .nav_bar_li {
+      background-color: $blue_ll;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      width: 40%;
+      text-align: center;
+      color: $white;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      @media screen and (min-width: 768px) {
+        font-size: 1rem;
+        background-color: initial;
+        color: $dark_grey;
+        padding: 0.5rem;
+      }
+    }
+
+    .selected {
+      background-color: $red_ll;
+      color: $white;
+    }
+
+    .selected_men {
+      background-color: $blue_ll;
+      color: $white;
+    }
+    
+    .selected_sec {
+      background-color: $blue_ll;
+      color: $white;
+    }
+    
+    :hover {
+      background-color: $blue_ll;
+      color: $white;
+      border-radius: 0.5rem;
+    }
+  }
+}
+
+.close {
+  position: fixed;
+  left: -100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.open {
+  position: fixed;
+  left: 0%;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav_bar_lat {
+  height: fill-available;
+  width: 30rem;
+  background-color: $icon_gray;
+  display: flex;
+  justify-content: flex-end;
+
+  @media screen and (min-width: 768px) {
+    width: 24rem;
+  }
+
+  .nav_bar_lat_btn {
+    height: 100%;
+    width: 2.7rem;
+    background-color: $dark_grey;
+    display: flex;
+    padding: 0.5rem;
+    cursor: pointer;
+
+    .arrow_lat {
+      transform: scaleX(-1);
+    }
+  }
+
+  .nav_bar_lat_ul {
+    margin-top: 2rem;
+    width: 100%;
+    border-top: 1px solid $dark_grey;
+    color: $white;
+    font-size: 1.2rem;
+
+    .nav_bar_lat_li {
+      border-bottom: 1px solid $dark_grey;
+      padding: 0.6rem;
+      text-align: right;
+      font-size: 1.1rem;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: flex-end;
+
+        img {
+          width: 2rem;
+        }
+      }
+    }
+
+    .nav_bar_lat_li_men {
+      border-bottom: 1px solid $dark_grey;
+      padding: 0.6rem;
+      text-align: right;
+      font-size: 1.1rem;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: flex-start;
+
+        img {
+          width: 2rem;
+        }
+      }
+    }
+
+    .nav_bar_lat_li_sec {
+      border-bottom: 1px solid $dark_grey;
+      padding: 0.6rem;
+      text-align: right;
+      font-size: 1.1rem;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: flex-end;
+
+        img {
+          width: 2rem;
+        }
+      }
+    }
+
+    .selected {
+      background-color: $dark_grey;
+    }
+    
+    .selected_sec {
+      background-color: $light_grey;
+      color: $black;
+    }
+    
+    :hover {
+      background-color: $middle_grey;
+    }
+
+    .empty {
+      font-size: 1rem;
+      font-weight: 100;
+      background-color: $sec_grey;
+    }
+
+    .seccion {
+      background-color: $sec_grey;
+    }
+  }
+}
+
+.lat_close {
+  position: fixed;
+  left: -27.6rem;
+  transition: all 0.5s ease-in-out;
+
+  @media screen and (min-width: 768px) {
+    left: -21.5rem;
+  }
+}
+
+.lat_open {
+  position: fixed;
+  left: 0%;
+  transition: all 0.5s ease-in-out;
+}

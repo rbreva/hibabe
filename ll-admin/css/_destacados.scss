@@ -1,0 +1,33 @@
+.destacados {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 1px solid #c3c3c3;
+    margin: 5px 5px 10px 5px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    .nombre {
+        width: 20%;
+    }
+
+    .imagen {
+        width: 20%;
+        img {
+            width: 80px;
+        }
+    
+    }
+}
+
+#columnasSlideinicio {
+    display: flex;
+    flex-wrap: wrap;
+
+    .bloqueSlideinicio {
+        width: 30%;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+}

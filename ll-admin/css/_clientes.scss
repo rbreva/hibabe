@@ -1,0 +1,53 @@
+.clientes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .cliente {
+        display: flex;
+        gap: 1rem;
+        border-bottom: 1px solid $light_grey;
+
+        .cliente_item {
+            font-size: 1.2rem;
+            border-right: 1px solid $light_grey;
+        }
+
+        .idcli {
+            width: 3%;
+            text-align: center;
+        }
+        
+        .nombre {
+            width: 12%;
+        }
+        
+        .apellido {
+            width: 20%;
+        }
+        
+        .dni {
+            width: 10%;
+        }
+        
+        .mail {
+            width: 25%;
+        }
+        
+        .birth {
+            width: 10%;
+        }
+        
+        .celular {
+            width: 10%;
+        }
+        
+        .ingreso {
+            width: 10%;
+        }
+    }
+
+    .header {
+        font-weight: bold;
+    }
+}

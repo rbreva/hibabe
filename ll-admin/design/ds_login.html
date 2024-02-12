@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <header>
+      <div class="marquesina">Marquesina</div>
+    </header>
+    <main>
+      <div class="login">
+        <div class="login_case">
+          <img class="logo" src="../images/svg/limalocal.svg" alt="Limalocal" />
+          <h1 class="login_h1">Administrador</h1>
+          <h4 class="login_h4">Version 3.0</h4>
+          <form class="login_form" action="ll-admin\php\login.php" method="post">
+            <input class="login_input" type="text" name="user" id="user" placeholder="Usuario" />
+            <input class="login_input" type="password" name="pass" id="pass" placeholder="Contraseña" />
+            <input class="login_btn" type="submit" value="Ingresar" />
+            <a class="forgot_pass" href="#">¿Olvidaste tu contraseña?</a>
+            <div class="alert_msj"></div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="marq">Limalocal 2023</div>
+    </footer>
+  </body>
+</html>

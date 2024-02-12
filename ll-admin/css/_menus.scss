@@ -1,0 +1,40 @@
+.lista_menu {
+  padding: 1rem;
+
+  .lista_menu_linea {
+    display: flex;
+    padding: 0.5rem;
+    gap: 1rem;
+
+    .lista_menu_nombre {
+      width: 20%;
+    }
+
+    .lista_menu_acciones {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      .btn_menuacc {
+        text-decoration: none;
+        background-color: $dark_grey;
+        color: $white;
+        padding: 0.3rem 0.8rem;
+        border-radius: 0.5rem;
+      }
+
+      .alerta {
+        background-color: $red_ll;
+      }
+
+      .precaucion {
+        background-color: $green_ll;
+      }
+    }
+  }
+
+  .top {
+    font-weight: bold;
+    border-bottom: 1px solid $middle_grey;
+  }
+}

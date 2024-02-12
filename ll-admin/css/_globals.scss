@@ -1,0 +1,82 @@
+/* -------Globals---------- */
+
+$blue_ll: #2c368b;
+$red_ll: #d3255c;
+$yellow_ll: #f7981d;
+$green_ll: #16b79d;
+$black: #0e0e0e;
+$black_tr: #0e0e0e7b;
+$dark_grey: #242424;
+$icon_gray: #444444;
+$middle_grey: #808080;
+$sec_grey: #595959;
+$light_grey: #c3c3c3;
+$lighter_grey: #f4f4f4;
+$white: #ffffff;
+$principalFont: "Noto Sans", sans-serif;
+
+
+*,
+*::before,
+*::after,
+a:focus {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: $white;
+  font-size: 1.2rem;
+  font-family: $principalFont;
+  color: $dark_grey;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.desk,
+.hide {
+  display: none;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 11rem;
+}
+
+@media screen and (min-width: 768px) {
+  .desk {
+    display: block;
+  }
+
+  .mob {
+    display: none;
+  }
+}

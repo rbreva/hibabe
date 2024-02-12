@@ -1,0 +1,44 @@
+.nota {
+  padding: 7px;
+  font-size: 11px;
+  color: $red_ll;
+  border-bottom: 1px solid $red_ll;
+}
+
+.titulo_banner {
+  padding: 1rem;
+  font-weight: bold;
+  border-bottom: 1px solid $light_grey;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.banner {
+  padding: 1rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid $sec_grey;
+
+  .linea {
+    padding: 1rem;
+  }
+
+  .imagen {
+    width: 100%;
+  }
+
+  .imagen_mobile {
+    width: 50rem;
+  }
+
+  .nombre_banner {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+
+  .video {
+    width: 50rem;
+    height: 100%;
+  }
+}

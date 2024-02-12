@@ -1,0 +1,234 @@
+/* -------Globals---------- */
+*,
+*::before,
+*::after,
+a:focus {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  width: 100%;
+  background: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  color: #2c2c2c;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+}
+header .anuncio {
+  width: 100%;
+  background: #c1c1c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2c2c2c;
+  font-size: 1.4rem;
+  padding: 0.7rem 0;
+  font-weight: bold;
+}
+header .principal {
+  background-color: #efefef;
+}
+header .principal .personal {
+  width: 100%;
+  max-width: 125rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  header .principal .personal {
+    display: grid;
+  }
+}
+header .principal .personal .menu_mob {
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  header .principal .personal .menu_mob {
+    display: none;
+  }
+}
+header .principal .personal .menu_mob .img_menu {
+  width: 4rem;
+}
+header .principal .personal .registro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 1.4rem;
+}
+header .principal .personal .registro .search {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  header .principal .personal .registro .search {
+    display: flex;
+    align-items: center;
+  }
+}
+header .principal .personal .registro .search .inp_search {
+  height: 30px;
+  width: calc(100% - 50px);
+  border: 1px solid #bdbdbd;
+  padding: 4px;
+  border-radius: 5px 0px 0px 5px;
+  font-size: 12px;
+}
+header .principal .personal .registro .search .btn_search {
+  height: 30px;
+  width: 50px;
+  border-radius: 0px 5px 5px 0px;
+  background-color: #cccccc;
+  cursor: pointer;
+  border: 1px solid #bdbdbd;
+}
+header .principal .personal .registro .search .img_search {
+  width: 25px;
+}
+header .principal .personal .registro .login .a_login {
+  font-size: 1.2rem;
+}
+header .principal .personal .registro .bolsa {
+  position: relative;
+}
+header .principal .personal .registro .bolsa .img_bolsa {
+  width: 3rem;
+}
+header .principal .personal .registro .bolsa .cant {
+  position: absolute;
+  width: 2rem;
+  top: 1rem;
+  right: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+header .principal .redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  gap: 0.5rem;
+}
+header .principal .redes .img_red {
+  width: 3rem;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+header .logo .img_logo {
+  width: 24rem;
+}
+header nav {
+  display: none;
+}
+
+footer {
+  width: 100%;
+}
+footer .redes_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+footer .redes_footer .img_red {
+  width: 3rem;
+}
+footer .secciones {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+footer .secciones .seccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .secciones .seccion h3 {
+  font-size: 1.6rem;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+footer .secciones .seccion li {
+  padding: 5px 0px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+footer .secciones .seccion .tarjetas {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+footer .secciones .seccion .tarjetas .img_tarjeta {
+  width: 5rem;
+}
+footer .secciones .seccion .logo {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+footer .secciones .seccion .logo .img_logo {
+  width: 10rem;
+}
+footer .mark {
+  width: 100%;
+  background-color: #2c2c2c;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .mark .a_mark {
+  color: #ffffff;
+  font-size: 1rem;
+}/*# sourceMappingURL=styles.css.map */
