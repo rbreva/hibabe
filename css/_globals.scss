@@ -1,11 +1,12 @@
 /* -------Globals---------- */
 
 $white: #ffffff;
+$white_tr: #ffffffe3;
 $black: #2c2c2c;
 $middle_grey: #c1c1c1;
 $light_grey: #efefef;
 $red: #b01116;
-$gray_tr: #ffffffc9;
+$gray_tr: #ffffffe1;
 $principalFont: "Lato", sans-serif;
 
 
@@ -42,6 +43,28 @@ img {
   height: auto;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.desk_f {
+    display: none !important;
+
+    @media screen and (min-width: 768px) {
+        display: flex !important;
+    }
+}
+
+.mob_f {
+    display: flex !important;
+    padding: 1rem;
+    background-color: $white;
+
+    @media screen and (min-width: 768px) {
+        display: none !important;
+    }
+}
+
 body{
 	width: 100%;
     background: $white;
@@ -56,4 +79,10 @@ body{
 .container {
   width: 100%;
   margin: 0 auto;
+}
+
+.contenedor {
+    width: 100%;
+    padding-top: 200px;
+    flex: 1;
 }

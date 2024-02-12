@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/menu_hibabe.js"></script>
 </head>
 <body>
     <header>
@@ -20,7 +21,7 @@
                     <img class="img_menu" src="images/svg/icons/menu_mob.svg" alt="Menú">
                 </div>
                 <div class="registro">
-                    <form class="search" action="busqueda.php" method="post">
+                    <form class="search desk_f" action="busqueda.php" method="post">
                         <input class="inp_search" type="text" placeholder="Buscar" name="search" required>
                         <button class="btn_search" type="submit">
                             <img class="img_search" src="images/svg/icons/lupa.svg" alt="Buscar">
@@ -51,16 +52,46 @@
                 <img class="img_logo" src="images/svg/logo_hibabe.svg" alt="Hi Babe Perú">
             </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nuevo</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <form class="search mob_f" action="busqueda.php" method="post">
+                <input class="inp_search" type="text" placeholder="Buscar" name="search" required>
+                <button class="btn_search" type="submit">
+                    <img class="img_search" src="images/svg/icons/lupa.svg" alt="Buscar">
+                </button>
+            </form>
+            <div class="logo mob_f">
+                <img class="img_logo" src="images/svg/logo_hibabe.svg" alt="Hi Babe Perú">
+                <div class="menu_mob_x">
+                    <img class="img_menu_x" src="images/svg/icons/menu_mob_x.svg" alt="Menú">
+                </div>
+            </div>
+            <nav class="navbar_nav">
+                <ul class="navbar_ul">
+                    <li class="navbar_li"><a class="navbar_a bold" href="index.php">Inicio</a></li>
+                    <li class="navbar_li"><a class="navbar_a" href="nuevo.php">Nuevo</a></li>
+                    <li class="navbar_li submenu">
+                        <a class="navbar_a">Ropa</a>
+                        <ul class="children_ul">
+                            <li class="children_li"><a href="menu.php?subid=7">POLOS</a></li>
+                            <li class="children_li"><a href="menu.php?subid=18">PANTALONES</a></li>
+                            <li class="children_li"><a href="menu.php?subid=26">TEJIDOS</a></li>
+                            <li class="children_li"><a href="menu.php?subid=30">CAMISAS</a></li>
+                            <li class="children_li"><a href="menu.php?subid=40">ACCESORIOS</a></li>
+                            <li class="children_li"><a href="menu.php?subid=41">SUDADERAS</a></li>
+                            <li class="children_li"><a href="menu.php?subid=42">LIQUIDACION</a></li>
+                            <li class="children_li"><a href="menu.php?subid=43">CASACAS</a></li>
+                            <li class="children_li"><a href="menu.php?subid=44">BASICOS</a></li>
+                            <li class="children_li"><a href="menu.php?subid=45">ZIPPERS</a></li>
+                            <li class="children_li"><a href="menu.php?subid=46">FALDAS</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar_li"><a class="navbar_a" href="ofertas.php">Ofertas</a></li>
+                    <li class="navbar_li"><a class="navbar_a" href="contacto.php">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div class="container">
+    <div class="contenedor">
         <div class="banner">
             <a href="#" class="link_banner">
                 <img src="images/banners/16942022453856129077510.jpg" alt="Banner">

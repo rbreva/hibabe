@@ -1,5 +1,7 @@
 header {
   width: 100%;
+  position: fixed;
+  z-index: 10;
 
   .anuncio {
     width: 100%;
@@ -58,37 +60,6 @@ header {
           gap: 1rem;
         }
 
-        .search {
-          display: none;
-
-            @media screen and (min-width: 768px) {
-                display: flex;
-                align-items: center;
-            }
-
-            .inp_search {
-                height: 30px;
-                width: calc(100% - 50px);
-                border: 1px solid $middle_grey;
-                padding: 4px;
-                border-radius: 5px 0px 0px 5px;
-                font-size: 12px;
-            }
-
-            .btn_search {
-                height: 30px;
-                width: 50px;
-                border-radius: 0px 5px 5px 0px;
-                background-color: $middle_grey;
-                cursor: pointer;
-                border: 1px solid $middle_grey;
-            }
-
-            .img_search {
-                width: 25px;
-            }
-        }
-
         .login {
           .a_login {
             font-size: 1.2rem;
@@ -133,17 +104,159 @@ header {
   }
 
   .logo {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.5rem 0;
+    background-color: $white;
 
     .img_logo {
       width: 24rem;
     }
+
+    .menu_mob_x {
+      position: absolute;
+      right: 0;
+      top: 0.5rem;
+
+      .img_menu_x {
+        width: 5rem;
+      }
+    }
   }
 
-  nav {
-    display: none;
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    min-height: 100vh;
+    background-color: $white_tr;
+    width: 100%;
+    transition: left 0.3s ease;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.5rem 0;
+      background-color: $white;
+      position: initial;
+      min-height: auto;
+    }
+
+    .navbar_nav {
+        overflow-y: auto;
+
+      .navbar_ul {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: 768px) {
+          flex-direction: row;
+          gap: 3rem;
+        }
+
+        .navbar_li {
+          border-bottom: 1px solid $black;
+          padding: 1rem;
+          width: 100%;
+
+          &:hover .children_ul {
+            display: flex;
+          }
+
+          @media screen and (min-width: 768px) {
+            border-bottom: none;
+            padding: 0;
+          }
+
+          .navbar_a {
+            font-size: 1.3rem;
+            color: $black;
+            text-transform: uppercase;
+            display: block;
+
+            @media screen and (min-width: 768px) {
+              padding: 0;
+            }
+          }
+
+          .children_ul {
+            display: none;
+            padding: 0;
+            margin: 0;
+            flex-direction: column;
+
+            @media screen and (min-width: 768px) {
+              display: none;
+              flex-direction: column;
+              background: $white_tr;
+              position: absolute;
+              min-width: 19rem;
+              max-width: 36rem;
+              padding: 1rem;
+              z-index: 10;
+              border-radius: 0px 0px 10px 10px;
+            }
+
+            .children_li {
+                border-bottom: 1px solid $middle_grey;
+                padding: 1rem;
+                font-size: 1.1rem;
+
+              &:hover {
+                background: $white_tr;
+              }
+
+              @media screen and (min-width: 768px) {
+                border-bottom: none;
+                padding: 0.8rem;
+                border-bottom: 1px solid #2c2c2c;
+              }
+
+              .children_a {
+                font-size: 1.2rem;
+                color: $black;
+                text-transform: uppercase;
+                display: block;
+
+                @media screen and (min-width: 768px) {
+                  padding: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+
+    .inp_search {
+      height: 30px;
+      width: calc(100% - 50px);
+      border: 1px solid $middle_grey;
+      padding: 4px;
+      border-radius: 5px 0px 0px 5px;
+      font-size: 12px;
+    }
+
+    .btn_search {
+      height: 30px;
+      width: 50px;
+      border-radius: 0px 5px 5px 0px;
+      background-color: $middle_grey;
+      cursor: pointer;
+      border: 1px solid $middle_grey;
+    }
+
+    .img_search {
+      width: 25px;
+    }
   }
 }
